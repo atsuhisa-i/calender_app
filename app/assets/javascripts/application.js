@@ -53,8 +53,8 @@ $(function () {
                   day: '日'
               },
               timeFormat: "HH:mm",
-              eventColor: '#63ceef',
-              eventTextColor: '#000000',
+              eventColor: '#dbf5fa',
+              eventTextColor: '#333',
       });
     }
   });

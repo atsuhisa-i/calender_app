@@ -1,24 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>すること:</strong>
-  <%= @event.title %>
-</p>
+<div class="outer">
+  <div class="header-show">【〇〇の予定】</div>
 
-<p>
-  <strong>どんなこと:</strong>
-  <%= @event.description %>
-</p>
+  <div class="content">
+    <div class="title">すること</div>
+    <div class="title__content">
+      <%= @event.title %>
+    </div>
+    <hr class="style__line">
 
-<p>
-  <strong>いつから:</strong>
-  <%= @event.start_date.to_s(:datetime_jp) %>
-</p>
+    <div class="detail">どんなこと</div>
+    <div class="detail__content">
+      <%= @event.description %>
+    </div>
+    <hr class="style__line">
 
-<p>
-  <strong>いつまで:</strong>
-  <%= @event.end_date.to_s(:datetime_jp) %>
-</p>
+    <div class="start">いつから</div>
+    <div class="start__content">
+      <%= @event.start_date.to_s(:datetime_jp) %>
+    </div>
+    <hr class="style__line">
 
-<%= link_to '編集', edit_event_path(@event) %> |
-<%= link_to 'もどる', events_path %>
+    <div class="end">いつまで</div>
+    <div class="end__content">
+      <%= @event.end_date.to_s(:datetime_jp) %>
+    </div>
+    <hr class="style__line">
+    
+    
+  </div>
+  <div class="link">
+      <%= link_to '編集', edit_event_path(@event) %> |
+      <%= link_to 'もどる', events_path %>
+    </div>
+</div>
