@@ -20,27 +20,30 @@
 
     <div class="start">いつから</div>
     <div class="start__content">
-      <%= @event.start_date.to_s %>
+      <%= @event.start_date.strftime("%Y-%m-%d %H:%M:%S") %>
     </div>
     <hr class="style__line">
 
     <div class="end">いつまで</div>
     <div class="end__content">
-      <%= @event.end_date.to_s %>
+      <%= @event.end_date.strftime("%Y-%m-%d %H:%M:%S") %>
     </div>
     <hr class="style__line">
   </div>
   <div class="link">
       <%= link_to '編集', edit_event_path %>
+      <%= link_to '消す', @event, method: :delete, data: { confirm: '消してもいいですか?' } %>
       <%= link_to 'もどる', events_path %>
   </div>
   <%= form_with(model: [@event, Comment.new], local: true) do |form| %>
     <div class="comment__form">
-      <%= form.label :コメント %>
+      <%= form.label :コメントを書く, class: 'comment__label' %>
       <%= form.text_field :text %>
+    <div>
       <%= button_tag type: 'submit', class: 'form__button' do %>
         コメントする
       <% end %>
+    </div>
     </div>
   <% end %>
   <div class="comments__list">

@@ -71,6 +71,28 @@
     font-size: 18px;
     background-color: #f8fae3;
   }
+  .comment__form {
+    width: 50%;
+    margin: 0 auto;
+    .comment__label {
+      font-size: 16px;
+    }
+    #comment_text {
+      width: 618px;
+      height: 25px;
+    }
+    .form__button {
+      display: block;
+      margin: 0 0 0 auto;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  }
+  .comments__list {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
 }
 
 .style__line {
