@@ -11,32 +11,34 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  <div class="input-form">
+    <div class="field">
+      <%= form.label :名前, class: "label" %>
+      <%= form.text_field :name %>
+    </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+    <div class="field">
+      <%= form.label :すること, class: "label" %>
+      <%= form.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
+    <div class="field">
+      <%= form.label :どんなこと, class: "label" %>
+      <%= form.text_area :description %>
+    </div>
 
-  <div class="field">
-    <%= form.label :start_date %>
-    <%= form.datetime_select :start_date %>
-  </div>
+    <div class="field">
+      <%= form.label :いつから, class: "label" %>
+      <%= form.datetime_select :start_date, use_month_numbers: true %>
+    </div>
 
-  <div class="field">
-    <%= form.label :end_date %>
-    <%= form.datetime_select :end_date %>
-  </div>
+    <div class="field">
+      <%= form.label :いつまで, class: "label" %>
+      <%= form.datetime_select :end_date, use_month_numbers: true %>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit :送信する, class: "label" %>
+    </div>
   </div>
 <% end %>

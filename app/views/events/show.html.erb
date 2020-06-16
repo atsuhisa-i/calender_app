@@ -1,10 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <div class="outer">
-  <div class="header-show">
-    <%= "#{@event.name}の予定" %>
+  <div class="header__outer">
+    <div class="header-show">
+      <%= "#{@event.name}の予定" %>
+    </div>
+    <hr class="style__line">
   </div>
-
   <div class="content">
     <div class="title">すること</div>
     <div class="title__content">
@@ -33,7 +35,9 @@
   <div class="link">
       <%= link_to '編集', edit_event_path %>
       <%= link_to '消す', @event, method: :delete, data: { confirm: '消してもいいですか?' } %>
-      <%= link_to 'もどる', events_path %>
+      <div class="link__top">
+        <%= link_to 'トップページにもどる', events_path %>
+      </div>
   </div>
   <%= form_with(model: [@event, Comment.new], local: true) do |form| %>
     <div class="comment__form">
