@@ -4,7 +4,7 @@
   <%= render 'form', event: @event %>
 
   <div class="edit__link">
-    <%= link_to '予定にもどる', @event %> |
-    <%= link_to 'トップページにもどる', events_path %>
+    <%= link_to '予定にもどる', @event, class: "edit__link__text-1" %> |
+    <%= link_to 'トップページにもどる', events_path, class: "edit__link__text-2"%>
   </div>
 </div>

@@ -33,6 +33,13 @@
 .new__link {
   width: 50%;
   margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  &__text {
+    text-decoration: none;
+  }
+  
 }
 
 .edit__link {
@@ -41,4 +48,10 @@
   text-align: center;
   margin-top: 20px;
   font-size: 15px;
+  &__text-1 {
+    text-decoration: none;
+  }
+  &__text-2 {
+    text-decoration: none;
+  }
 }
