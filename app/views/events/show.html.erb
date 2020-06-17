@@ -54,7 +54,7 @@
     ＜コメント一覧＞
     <% if @comments  %>
       <% @comments.each do |comment| %>
-        <p>
+        <p class="comment__text">
           <%= comment.text %>
         </p>
       <% end %>
