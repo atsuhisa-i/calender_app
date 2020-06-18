@@ -16,6 +16,19 @@
     margin-top: 16px;
     .label {
       font-size: 16px;
+      display: inline-block;
+    }
+    .required {
+      background-color: red;
+      border-radius: 0.2em;
+      color: white;
+      padding: 0 2px 0 2px;
+    }
+    .not__required {
+      background-color: rgb(177, 175, 175);
+      border-radius: 0.2em;
+      color: white;
+      padding: 0 2px 0 2px;
     }
     #event_name {
       width: 250px;

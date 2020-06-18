@@ -14,27 +14,42 @@
   <div class="input-form">
     <div class="field">
       <%= form.label :名前, class: "label" %>
-      <%= form.text_field :name %>
+      <span class="required">必須</span>
+      <div>
+        <%= form.text_field :name %>
+      </div>
     </div>
 
     <div class="field">
       <%= form.label :すること, class: "label" %>
-      <%= form.text_field :title %>
+      <span class="required">必須</span>
+      <div>
+        <%= form.text_field :title %>
+      </div>
     </div>
 
     <div class="field">
       <%= form.label :どんなこと, class: "label" %>
-      <%= form.text_area :description %>
+      <span class="not__required">任意</span>
+      <div>
+        <%= form.text_area :description %>
+      </div>
     </div>
 
     <div class="field">
       <%= form.label :いつから, class: "label" %>
-      <%= form.datetime_select :start_date, use_month_numbers: true %>
+      <span class="required">必須</span>
+      <div>
+        <%= form.datetime_select :start_date, use_month_numbers: true %>
+      </div>
     </div>
 
     <div class="field">
       <%= form.label :いつまで, class: "label" %>
-      <%= form.datetime_select :end_date, use_month_numbers: true %>
+      <span class="required">必須</span>
+      <div>
+        <%= form.datetime_select :end_date, use_month_numbers: true %>
+      </div>
     </div>
 
     <div class="actions">
