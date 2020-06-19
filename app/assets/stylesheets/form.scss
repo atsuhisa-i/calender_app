@@ -1,4 +1,4 @@
-.outer {
+.new__and__edit__outer {
   margin: -33px;
   background-color: #f8fae3;
   height: 100vh;
@@ -43,6 +43,9 @@
       #event_description {
         width: 250px;
         height: 100px;
+      }
+      #event_place {
+        width: 250px;
       }
     }
   }
