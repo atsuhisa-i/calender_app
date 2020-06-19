@@ -1,59 +1,76 @@
-.form__header {
-  width: 50%;
-  height: 80px;
-  line-height: 80px;
-  margin: 0 auto;
-  text-align: center;
+.outer {
+  margin: -33px;
   background-color: #f8fae3;
-}
+  height: 100vh;
+  .form__header {
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f8fae3;
+  }
 
-.input-form {
-  width: 40%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 10px;
-  .field {
-    margin-top: 16px;
-    .label {
-      font-size: 16px;
-    }
-    #event_name {
-      width: 250px;
-    }
-    #event_title {
-      width: 250px;
-    }
-    #event_description {
-      width: 250px;
-      height: 100px;
+  .input-form {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    .field {
+      margin-top: 16px;
+      .label {
+        font-size: 16px;
+        display: inline-block;
+      }
+      .required {
+        background-color: red;
+        border-radius: 0.2em;
+        color: white;
+        padding: 0 2px 0 2px;
+      }
+      .not__required {
+        background-color: rgb(177, 175, 175);
+        border-radius: 0.2em;
+        color: white;
+        padding: 0 2px 0 2px;
+      }
+      #event_name {
+        width: 250px;
+      }
+      #event_title {
+        width: 250px;
+      }
+      #event_description {
+        width: 250px;
+        height: 100px;
+      }
     }
   }
-}
 
-.new__link {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 15px;
-  padding-bottom: 30px;
-  &__text {
-    text-decoration: none;
+  .new__link {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-bottom: 30px;
+    &__text {
+      text-decoration: none;
+    }
   }
-  
-}
 
-.edit__link {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 15px;
-  padding-bottom: 30px;
-  &__text-1 {
-    text-decoration: none;
-  }
-  &__text-2 {
-    text-decoration: none;
+  .edit__link {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-bottom: 30px;
+    &__text-1 {
+      text-decoration: none;
+    }
+    &__text-2 {
+      text-decoration: none;
+    }
   }
 }

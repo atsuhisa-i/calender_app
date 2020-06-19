@@ -69,8 +69,17 @@
     font-size: 18px;
     background-color: #f8fae3;
     padding-top: 30px;
+    .edit__link-show {
+      text-decoration: none;
+    }
+    .delete__link-show {
+      text-decoration: none;
+    }
     &__top {
       margin: 16px 0 16px 0;
+      .top__link-show {
+        text-decoration: none;
+      }
     }
   }
   .comment__form {
