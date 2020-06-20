@@ -3,7 +3,8 @@ class CommentsController < ApplicationController
     event = Event.find(params[:event_id])
     @comment = event.comments.build(comment_params)
     if @comment.save
-      redirect_to event_path(params[:event_id])
+      respond_to do |format|
+        format.json
     else
       redirect_to event_path(params[:event_id])
     end
