@@ -20,6 +20,12 @@
     </div>
     <hr class="style__line">
 
+    <div class="place">どこで</div>
+    <div class="place__content">
+      <%= @event.place %>
+    </div>
+    <hr class="style__line">
+
     <div class="start">いつから</div>
     <div class="start__content">
       <%= @event.start_date.strftime("%Y-%m-%d %H:%M:%S") %>
@@ -43,11 +49,9 @@
     <div class="comment__form">
       <%= form.label :コメントを書く, class: 'comment__label' %>
       <%= form.text_field :text %>
-    <div>
       <%= button_tag type: 'submit', class: 'form__button' do %>
         コメントする
       <% end %>
-    </div>
     </div>
   <% end %>
   <div class="comments__list">

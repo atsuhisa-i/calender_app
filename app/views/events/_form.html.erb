@@ -37,6 +37,14 @@
     </div>
 
     <div class="field">
+      <%= form.label :どこで, class: "label" %>
+      <span class="not__required">任意</span>
+      <div>
+        <%= form.text_field :place %>
+      </div>
+    </div>
+
+    <div class="field">
       <%= form.label :いつから, class: "label" %>
       <span class="required">必須</span>
       <div>

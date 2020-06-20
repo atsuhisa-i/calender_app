@@ -2,6 +2,7 @@
 .outer {
   margin: -33px;
   background-color: #f8fae3;
+  height: auto;
   .header__outer {
     width: 50%;
     margin: 0 auto;
@@ -34,6 +35,17 @@
       font-size: 25px;
     }
     .detail__content {
+      height: 100%;
+      line-height: 100%;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .place {
+      height: 40px;
+      line-height: 40px;
+      font-size: 25px;
+    }
+    .place__content {
       height: 100%;
       line-height: 100%;
       margin-top: 15px;
@@ -83,13 +95,13 @@
     }
   }
   .comment__form {
-    width: 50%;
+    width: 42%;
     margin: 0 auto;
     .comment__label {
       font-size: 16px;
     }
     #comment_text {
-      width: 510px;
+      width: 522px;
       height: 25px;
     }
     .form__button {
@@ -100,12 +112,14 @@
     }
   }
   .comments__list {
-    width: 50%;
+    width: 42%;
     margin: 0 auto;
     font-size: 16px;
     padding-bottom: 20px;
+    background-color: #f8fae3;
     .comment__text {
       font-size: 16px;
+      background-color: #f8fae3;
     }
   }
 }
