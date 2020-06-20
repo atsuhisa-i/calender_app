@@ -48,7 +48,7 @@
   <%= form_with(model: [@event, Comment.new], local: true, id: "new_comment") do |form| %>
     <div class="comment__form">
       <%= form.label :コメントを書く, class: 'comment__label' %>
-      <%= form.text_field :text %>
+      <%= form.text_field :text, class: "comment__textbox" %>
       <%= button_tag type: 'submit', class: 'form__button' do %>
         コメントする
       <% end %>

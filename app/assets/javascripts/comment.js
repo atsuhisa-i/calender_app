@@ -1,4 +1,8 @@
 $(function(){
+  function buildHTML(comment){
+    var html = `<p>${comment.text}</p>`
+    return html;
+  }
   $('#new_comment').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
@@ -11,5 +15,15 @@ $(function(){
       processData: false,
       contentType: false,
     })
+    .done(function(data){
+      var html = buildHTML(data);
+      $('.comments__list').append(html);
+      $('.textbox').val('');
+      $('.comment__textbox').val('');
+      $('.form__button').prop('disabled', false);
+    })
+    .fall(function(){
+      alert('error');
+    })
   })
-})
+});

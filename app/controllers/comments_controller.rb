@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
     if @comment.save
       respond_to do |format|
         format.json
+      end
     else
       redirect_to event_path(params[:event_id])
     end
