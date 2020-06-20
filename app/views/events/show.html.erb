@@ -16,7 +16,7 @@
 
     <div class="detail">どんなこと</div>
     <div class="detail__content">
-      <%= @event.description %>
+      <%= safe_join(@event.description.split("\n"),tag(:br)) %>
     </div>
     <hr class="style__line">
 
