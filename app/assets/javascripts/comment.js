@@ -1,6 +1,6 @@
 $(function(){
   function buildHTML(comment){
-    var html = `<p>${comment.text}</p>`
+    var html = `<p class="comment__text">${comment.text}</p>`
     return html;
   }
   $('#new_comment').on('submit', function(e){
