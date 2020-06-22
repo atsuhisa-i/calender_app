@@ -42,9 +42,16 @@ Things you may want to cover:
 
 
 # 使用技術（開発環境）
-
+  Ruby on Rails
+  scaffold
+  Fullcalendar
+  jQuery
+  html
+  scss
 
 # 課題や今後実装したい機能
+  ・javascriptなどを使用して動きのある見た目の実装
+  ・旅行などのイベントの際に撮った写真を投稿し、アルバムとして保存できるような機能の実装
 
 
 # DB設計
