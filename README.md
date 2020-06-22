@@ -33,7 +33,7 @@ Things you may want to cover:
   デプロイ先：https://infinite-peak-47610.herokuapp.com/events
 
 # 制作背景（意図）
-
+  家族間でこのアプリを用いてそれぞれの予定を入れておくことで、誰がいつどこで何をする（している）のかが、すぐに分かって、お互いの状況確認と家族の予定の摺り合わせが容易になる。コメントも各予定に残せるため、なかなか顔を合わせることができない時でも、気軽にコミュニケーションが図れる。
 
 # DEMO
 
@@ -42,16 +42,16 @@ Things you may want to cover:
 
 
 # 使用技術（開発環境）
-  Ruby on Rails
-  scaffold
-  Fullcalendar
-  jQuery
-  html
-  scss
+  - Ruby on Rails
+  - scaffold
+  - Fullcalendar
+  - jQuery
+  - html
+  - scss
 
 # 課題や今後実装したい機能
-  ・javascriptなどを使用して動きのある見た目の実装
-  ・旅行などのイベントの際に撮った写真を投稿し、アルバムとして保存できるような機能の実装
+  - javascriptなどを使用して動きのある見た目の実装
+  - 旅行などのイベントの際に撮った写真を投稿し、アルバムとして保存できるような機能の実装
 
 
 # DB設計
