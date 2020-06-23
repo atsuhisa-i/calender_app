@@ -36,6 +36,28 @@ Things you may want to cover:
   家族間で1つのカレンダーを共有し、それぞれの予定を入れておくことで、誰がいつどこで何をする（または、している）のかが、すぐに分かって、お互いの状況確認と家族の予定の摺り合わせや目標の共有、コミュニケーションの円滑化が可能になります。
 
 # DEMO
+- トップページ
+<img width="1438" alt="スクリーンショット 2020-06-23 21 38 25" src="https://user-images.githubusercontent.com/60007511/85404593-20e9b680-b59a-11ea-86bd-285ea75db8d7.png">
+
+トップページ左上の「新しい予定をいれる」をクリックすると予定入力フォームに遷移します。
+
+- 予定入力フォーム
+<img width="1438" alt="スクリーンショット 2020-06-23 21 43 50" src="https://user-images.githubusercontent.com/60007511/85405283-2267ae80-b59b-11ea-9a3e-a92cd126d6bf.png">
+
+予定を送信するとトップページに登録した予定が表示されます。
+
+- トップページの予定表示
+<img width="1433" alt="スクリーンショット 2020-06-23 21 45 19" src="https://user-images.githubusercontent.com/60007511/85405452-65298680-b59b-11ea-8a99-0bdbcc50096c.png">
+
+表示されている予定をクリックすると予定の詳細へ遷移します。
+
+- 予定詳細ページ
+<img width="1437" alt="スクリーンショット 2020-06-23 21 45 58" src="https://user-images.githubusercontent.com/60007511/85405594-9f932380-b59b-11ea-8b2f-8625a3337666.png">
+
+予定詳細ページから登録した予定の編集、削除、コメントの投稿が可能です。
+
+- 予定編集ページ
+<img width="1437" alt="スクリーンショット 2020-06-23 21 46 25" src="https://user-images.githubusercontent.com/60007511/85405787-dec17480-b59b-11ea-8c73-af9bdc0d16fa.png">
 
 
 # 工夫したポイント
