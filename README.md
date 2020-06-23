@@ -54,7 +54,7 @@ Things you may want to cover:
 - 予定詳細ページ
 <img width="1437" alt="スクリーンショット 2020-06-23 21 45 58" src="https://user-images.githubusercontent.com/60007511/85405594-9f932380-b59b-11ea-8b2f-8625a3337666.png">
 
-予定詳細ページから登録した予定の編集、削除、コメントの投稿が可能です。
+予定詳細ページから登録した予定の編集ページへの遷移、予定の削除、予定へのコメントの投稿が可能です。
 
 - 予定編集ページ
 <img width="1437" alt="スクリーンショット 2020-06-23 21 46 25" src="https://user-images.githubusercontent.com/60007511/85405787-dec17480-b59b-11ea-8c73-af9bdc0d16fa.png">
